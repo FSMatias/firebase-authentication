@@ -58,3 +58,33 @@ For each provider, there will be some specific configuration and setup steps to 
 ![Enable Google provider](./readme-content/Firebase-Google-provider-enable.PNG)
 
 2. Check Angular code to use Google login in your application. Use AuthGuard to protect your routes allowing only authorized users to access them. Check this [page](https://angular-templates.io/tutorials/about/firebase-authentication-with-angular) for more login options.
+
+
+## Host static website with Firebase
+1. Build you Angular app in prod:
+``` ng build --prod ```
+
+1. Install the firebase CLI:
+``` npm install -g firebase-tools ```
+
+1. Login to Firebase
+``` finebase login ```
+
+1. Initialize project:
+``` firebase init ``` 
+
+- Choose Hosting option.
+- On the public directory question, type `dist/<app-name>`
+- On the single-page appp question, usually your selection will be `Yes`
+- On the question about if you want to overwrite your index.html, say `no`
+
+By the end, you will get a message saying the Firebase initialization is completed.
+
+5. Deploy to Firebase Hosting:
+
+``` firebase deploy```
+
+6. Launch your app from the CLI using the following cmd:
+
+``` firebase open ```
+

@@ -22,7 +22,7 @@ export const environment = {
 };
 ```
 
-3. Install `@angular/fire` - the official library for Firebase and Angular
+3. Install `@angular/fire` and `firebase`- the official libraries for Firebase and Angular
 4. Import the Firebase libraries into the `app.modules.ts`:
 
 ```
@@ -56,3 +56,5 @@ For each provider, there will be some specific configuration and setup steps to 
 1. Enable Google sign-in provider and follow the instructions for the SHA1 fingerprint:
 
 ![Enable Google provider](./readme-content/Firebase-Google-provider-enable.PNG)
+
+2. Check Angular code to use Google login in your application. Use AuthGuard to protect your routes allowing only authorized users to access them. Check this [page](https://angular-templates.io/tutorials/about/firebase-authentication-with-angular) for more login options.

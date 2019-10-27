@@ -9,6 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "author": "FSMatias",
+  "license": "ISC",
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.11",
